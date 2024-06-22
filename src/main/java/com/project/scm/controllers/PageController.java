@@ -19,4 +19,18 @@ public class PageController {
 
         return "home";
     }
+
+    //about route
+    @GetMapping("/about")
+    public String aboutPage(){
+        System.out.println("About Page Loading");
+        return "about";
+    }
+
+    //services
+    @GetMapping("/services")
+    public String servicesPage(){
+        System.out.println("Services Page Loading");
+        return "services";
+    }
 }
