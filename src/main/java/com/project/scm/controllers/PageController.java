@@ -14,8 +14,8 @@ public class PageController {
     public String home(Model model){
         System.out.println("Home Page Handler");
         model.addAttribute("name", "Software Workshop Technologies Pvt. Ltd.");
-        model.addAttribute("Youtube Channel", "Learn Code With Java Developer");
-        model.addAttribute("Github Repository", "https://github.com/yadavikas004/smart-contact-manager");
+        model.addAttribute("description", "Learn Code With Java Developer");
+        model.addAttribute("githubRepo", "https://github.com/yadavikas004/smart-contact-manager");
 
         return "home";
     }

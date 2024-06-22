@@ -1,0 +1,13 @@
+
+
+
+//----------- node commands --------------//
+npm install -D tailwindcss
+npx tailwindcss init
+npx tailwindcss -i src/main/resources/static/css/input.css -o src/main/resources/static/css/output.css --watch
+
+Flowbite
+How to include tailwind and flowbite in your project
+1. npx tailwindcss -i src/main/resources/static/css/input.css -o src/main/resources/static/css/output.css --watch
+2. include output.css in your html
+3. If you want flowbite: include css and javascript using cdn
