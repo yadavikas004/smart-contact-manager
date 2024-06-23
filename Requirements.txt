@@ -11,3 +11,25 @@ How to include tailwind and flowbite in your project
 1. npx tailwindcss -i src/main/resources/static/css/input.css -o src/main/resources/static/css/output.css --watch
 2. include output.css in your html
 3. If you want flowbite: include css and javascript using cdn
+
+Fragments in Thymeleaf
+how to create fragements in thymeleaf
+<div class="fragment-tag" th:fragment="parent(content)">
+    <h1>This is Parent Fragment</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptate?</p>
+    <div th:replace="${content}"></div>
+</div>
+
+how to insert and replace fragments in thymeleaf
+<!-- using fragment -->
+<div class="host-tag" th:replace="~{base :: parent(~{::.third_content})}">
+    <section id="main_content">
+        <h1>This is Dynamic services passed to base parent</h1>
+    </section>
+    <section id="second_content">
+        <h1>This is Second Content</h1>
+    </section>
+    <section class="third_content">
+        <h1>This is Third Content</h1>
+    </section>
+</div>
