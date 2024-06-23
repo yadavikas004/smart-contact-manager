@@ -4,6 +4,7 @@
     <div th:replace="${content}"></div>
 </div>
 
-<div th:fragment="test">
-    <h1>This is testing fragment</h1>
+<div th:fragment="test(content)">
+    <div th:replace="${content}">
+    </div>
 </div>
